@@ -124,8 +124,6 @@ impl Image {
         self.gray_buffer = self.buffer.iter().map(|x| {
             (x.red as f64 * 0.299 + x.green as f64 * 0.587 + x.blue as f64 * 0.144) as u8
         }).collect();
-
-
     }
 }
 
